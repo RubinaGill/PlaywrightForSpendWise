@@ -30,7 +30,9 @@ test.describe('Transactions', () => {
     const { description, amount, date, category } = transactionData.editTransaction;
     await dashboardPage.gotoTransactionHistory();
     await dashboardPage.openTransactionForEdit(description);
-    await transactionPage.editTransaction(description + ' Edited', amount, date, category);
-    await expect(dashboardPage.page.getByText(description + ' Edited')).toBeVisible();
+
+    const timestamp = Date.now();
+    await transactionPage.editTransaction( `${description} Edited ${timestamp}`, amount, date, category);
+    await expect(dashboardPage.page.getByText(`${description} Edited ${timestamp}`)).toBeVisible();
   });
 });
