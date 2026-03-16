@@ -1,0 +1,14 @@
+{
+  "newTransaction": {
+    "description": "Groceries",
+    "amount": "50.00",
+    "date": "2026-03-16",
+    "category": "Groceries"
+  },
+  "editTransaction": {
+    "description": "Groceries",
+    "amount": "60.00",
+    "date": "2026-03-17",
+    "category": "Groceries"
+  }
+}
