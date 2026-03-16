@@ -124,7 +124,7 @@ Clone the repository.
 
 ```
 git clone https://github.com/RubinaGill/PlaywrightForSpendWise.git
-cd spendwise-playwright
+cd PlaywrightForSpendWise
 ```
 
 Install dependencies.
